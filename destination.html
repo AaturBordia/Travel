@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/utility.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #1e6091; /* Shades of blue background color */
+        display: flex;
+        flex-direction: row;
+        height: 100vh; /* 100% viewport height */
+      }
+
+      .navbar {
+        background-color: #333; /* Dark background color for the navbar */
+        flex: 3; /* 3/5 of the screen width */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .search-container {
+        background-color:black; /* White background for the search container */
+        padding: 20px; /* Increased padding for the search container */
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        width: 80%;
+      }
+
+      .search-heading {
+        text-align: left;
+        color:white;
+        font-size: 36px; /* Larger text for the heading */
+        margin-bottom: 20px; /* Add some space below the heading */
+      }
+
+      .search-input {
+        border: none;
+        padding: 15px; /* Increased padding for the search input */
+        width: 80%; /* Increased width to 80% of the container */
+        border-radius: 5px 0 0 5px;
+        font-size: 20px; /* Increased font size for the search input */
+        outline: none; /* Remove the default input focus outline */
+      }
+
+      .search-button {
+        background-color: #333; /* Dark background color for the search button */
+        color:white;
+        border: none;
+        padding: 15px 30px; /* Increased padding for the search button */
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px; /* Increased font size for the search button */
+        width: 20%;
+      }
+
+      .animation-container {
+        flex: 2; /* 2/5 of the screen width */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="search-heading">
+        <h2>Choose your Travel location</h2>
+      </div>
+    </head>
+      <div class="search-container">
+        
+        <form class = "flex">
+          <input type = "text" class = "form-control" placeholder="Destination name">
+          <input type="date" class = "form-control" placeholder="Date">
+          <input type="number" class = "form-control" placeholder="Price ($)">
+        </form>
+        <button class="search-button">
+          <i class="fa fa-search"></i>
+          <li><a href="hotel.html" class="menu-item scroller">Search</a></li>
+        </button>
+      </div>
+    </div>
+    <div class="animation-container">
+      <!-- Lottie animation goes here -->
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player
+        src="https://lottie.host/7620ebf8-9e06-4ee6-b25b-4621a6f7a313/OHdq8GYwBh.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px"
+        loop
+        autoplay
+        direction="1"
+        mode="normal"
+      ></lottie-player>
+    </div>
+  </body>
+</html>
